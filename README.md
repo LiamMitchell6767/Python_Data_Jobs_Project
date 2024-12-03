@@ -36,7 +36,7 @@ df['job_skills'] = df['job_skills'].apply(lambda x: ast.literal_eval(x) if pd.no
 
 I filtered out the different data roles to find the three most popular ones, then I got the top 5 skills for each of these roles. The query below can tell me what skills to focus on depending on what role I'm targeting.
 
-Notebook: [2_Skill_Demand.ipynb](3_Project/2_Skill_Demand.ipynb)
+Notebook: [1_Skill_Demand.ipynb](3_Project/2_Skill_Demand.ipynb)
 
 ### Visualize Data
 
@@ -65,6 +65,8 @@ plt.show()
 ## 2. How are in-demand skills trending for data analysts?
 
 To analyze the trends in data analyst skills for 2023, I first filtered the dataset to include only data analyst roles. Next, I calculated the number of job postings for each skill, grouped by the month they were posted. Finally, I visualized the data, highlighting the top five most in-demand skills.
+
+Notebook: [2_Skills_Trend.ipynb](3_Project/2_Skills_Trend.ipynb)
 
 ### Visualize Data
 
@@ -95,6 +97,8 @@ plt.show()
  ### Salary Analysis for Data Jobs
 
  To identify the highest-paying jobs and skills in the data field, I analyzed the median salaries for various data roles in the US. I selected the top six positions based on salary and visualized their salary distributions using a box plot for clearer comparison.
+
+Notebook: [3_Salary_Analysis.ipynb](3_Project/3_Salary_Analysis.ipynb)
 
  #### Visualize Data
 
@@ -152,6 +156,8 @@ plt.show()
 
 To determine which skills were both the highest-paying and most in-demand, I calculated the median salary for each skill and the frequency of its appearance in job postings. I then visualized the results with a scatter plot, using different colors to represent various technology categories for clearer differentiation.
 
+Notebook: [4_Optimal_Skills.ipynb](3_Project/4_Optimal_Skills.ipynb)
+
 #### Visualize data
 
 ```python
@@ -175,4 +181,19 @@ plt.show()
 
 - Skills such as `Python`, `Tableau`, and `R` are towards the higher end of the salary spectrum while also being fairly common in job listings, indicating that proficiency in these tools can lead to good opportunities in data analytics.
 
+# What I Learned
+Throughout this project, I deepened my understanding of the data analyst job market and enhanced my technical skills in Python, especially in data manipulation and visualization. Here are a few specific things I learned:
 
+- Advanced Python Usage: Utilizing libraries such as Pandas for data manipulation, Seaborn and Matplotlib for data visualization, and other libraries helped me perform complex data analysis tasks more efficiently.
+- Data Cleaning Importance: I learned that thorough data cleaning and preparation are crucial before any analysis can be conducted, ensuring the accuracy of insights derived from the data.
+- Strategic Skill Analysis: The project emphasized the importance of aligning one's skills with market demand. Understanding the relationship between skill demand, salary, and job availability allows for more strategic career planning in the tech industry.
+
+# Conclusion
+
+- **In-Demand Skills Across Data Roles**: `SQL`, `Python`, and `Excel` are foundational across data roles, with `SQL` particularly vital for Data Analysts and Data Engineers. Specialized tools like AWS and Spark are highly valued for Data Engineers.
+
+- **Skill Trends for Data Analysts**: `SQL` and `Excel` remain consistently in demand, while`Python` and `Tableau` add versatility for data analysts seeking stable, adaptable skill sets.
+
+- **Salaries in Data Roles**: Salary ranges differ significantly among data roles, with Senior Data Scientist and Senior Data Engineer roles commanding the highest median salaries due to their advanced skill requirements and experience level. Entry-level roles, such as Data Analysts, have more modest salaries but provide a strong foundation for skill-building and career growth.
+
+- **Optimal Skills to Learn**: Combining highly demanded skills such as `SQL` and `Excel` with higher-paying, advanced tools like `Python` and `Tableau` can maximize both job opportunities and earning potential.
