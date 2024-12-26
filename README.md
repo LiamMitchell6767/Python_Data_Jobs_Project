@@ -36,7 +36,7 @@ df['job_skills'] = df['job_skills'].apply(lambda x: ast.literal_eval(x) if pd.no
 
 I filtered out the different data roles to find the three most popular ones, then I got the top 5 skills for each of these roles. The query below can tell me what skills to focus on depending on what role I'm targeting.
 
-Notebook: [1_Skill_Demand.ipynb](3_Project/2_Skill_Demand.ipynb)
+Notebook: [1_Skill_Demand.ipynb](2_Skill_Demand.ipynb)
 
 ### Visualize Data
 
@@ -52,7 +52,7 @@ plt.show()
 ```
 ### Results
 
-![Visualization of Top Skills for Data Jobs](3_Project/images/skill_demand_all_data_roles.png)
+![Visualization of Top Skills for Data Jobs](images/skill_demand_all_data_roles.png)
 
 ### Insights
 
