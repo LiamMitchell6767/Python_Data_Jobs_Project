@@ -36,7 +36,7 @@ df['job_skills'] = df['job_skills'].apply(lambda x: ast.literal_eval(x) if pd.no
 
 I filtered out the different data roles to find the three most popular ones, then I got the top 5 skills for each of these roles. The query below can tell me what skills to focus on depending on what role I'm targeting.
 
-Notebook: [1_Skill_Demand.ipynb](2_Skill_Demand.ipynb)
+Notebook: [1_Skill_Demand.ipynb](1_Skill_Demand.ipynb)
 
 ### Visualize Data
 
@@ -66,7 +66,7 @@ plt.show()
 
 To analyze the trends in data analyst skills for 2023, I first filtered the dataset to include only data analyst roles. Next, I calculated the number of job postings for each skill, grouped by the month they were posted. Finally, I visualized the data, highlighting the top five most in-demand skills.
 
-Notebook: [2_Skills_Trend.ipynb](3_Project/2_Skills_Trend.ipynb)
+Notebook: [2_Skills_Trend.ipynb](2_Skills_Trend.ipynb)
 
 ### Visualize Data
 
@@ -82,7 +82,7 @@ plt.show()
 ```
 ### Results
 
-![Trending Skills for Data Analysts in the US](3_Project/images/skill_trend_DA.png)
+![Trending Skills for Data Analysts in the US](images/skill_trend_DA.png)
 
 ### Insights
 
@@ -98,7 +98,7 @@ plt.show()
 
  To identify the highest-paying jobs and skills in the data field, I analyzed the median salaries for various data roles in the US. I selected the top six positions based on salary and visualized their salary distributions using a box plot for clearer comparison.
 
-Notebook: [3_Salary_Analysis.ipynb](3_Project/3_Salary_Analysis.ipynb)
+Notebook: [3_Salary_Analysis.ipynb](3_Salary_Analysis.ipynb)
 
  #### Visualize Data
 
@@ -115,7 +115,7 @@ plt.show()
 ```
 ### Results
 
-![Salary Distribution of Data Jobs in the US](3_Project/images/salary_distributuon_data_jobs.png)
+![Salary Distribution of Data Jobs in the US](images/salary_distributuon_data_jobs.png)
 *Box plot visualizing the salary distributions for the top 4 data jobs in the US.*
 
 ### Insights
@@ -141,7 +141,7 @@ plt.show()
 ```
 ### Results
 
-![](3_Project/images/top_paying_skills_DA.png)
+![](images/top_paying_skills_DA.png)
 *These bar graphs compare the top 10 highest paying skills with the top 10 most in-demand skills for data analysts based on median salary (USD).*
 
 ### Insights
@@ -156,7 +156,7 @@ plt.show()
 
 To determine which skills were both the highest-paying and most in-demand, I calculated the median salary for each skill and the frequency of its appearance in job postings. I then visualized the results with a scatter plot, using different colors to represent various technology categories for clearer differentiation.
 
-Notebook: [4_Optimal_Skills.ipynb](3_Project/4_Optimal_Skills.ipynb)
+Notebook: [4_Optimal_Skills.ipynb](4_Optimal_Skills.ipynb)
 
 #### Visualize data
 
@@ -171,7 +171,7 @@ plt.show()
 
 ### Results
 
-![](3_Project/images/optimal_skills_DA.png)
+![](images/optimal_skills_DA.png)
 
 ### Insights
 
