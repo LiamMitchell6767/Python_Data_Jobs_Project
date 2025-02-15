@@ -1,9 +1,9 @@
 # Introduction
 
-Welcome to my analysis of the data job market, focusing on data analyst roles. This project was created out of a desire to navigate and understand the job market more effectively. It delves into the most in-demand and top-paying skills to help find optimal job opportunities for data analysts.
+Welcome to my analysis of the data job market in the US, focusing on data analyst roles. This project was created out of a desire to navigate and understand the job market more effectively. It delves into the most in-demand and top-paying skills to help find optimal job opportunities for data analysts.
 
 # The Questions
-Below are the questions I want to answer in my project:
+Below are the questions I aim to answer in my project:
 
 1. What are the skills most in demand for the top 3 popular data roles?
 2. How are in-demand skills trending for Data Analysts?
@@ -109,7 +109,7 @@ ax.xaxis.set_major_formatter(plt.FuncFormatter(lambda x, _: f'${int(x/1000)}K'))
 plt.show()
 
 # Histogram
- salaries = df_US_top4.loc[df_UK_top4['job_title_short'] == 'Senior Data Scientist']['salary_year_avg']
+ salaries = df_US_top4.loc[df_US_top4['job_title_short'] == 'Senior Data Scientist']['salary_year_avg']
 ax.xaxis.set_major_formatter(plt.FuncFormatter(lambda x, _: f'${int(x/1000)}K'))
 plt.show()
 ```
